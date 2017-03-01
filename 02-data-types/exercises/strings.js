@@ -14,21 +14,21 @@
 // 1. String Values
 //
 
-// console.log( 'hello world' )
-// console.log( 'hello "world", hello' )
-// console.log( "hello 'world', hello" )
-// console.log( "hello "world", hello" )
-// console.log( 'hello 'world', hello' )
+/*console.log( 'hello world' )
+console.log( 'hello "world", hello' )
+console.log( "hello 'world', hello" )
+console.log( "hello "world", hello" )
+console.log( `hello 'world', hello` )*/
 
 //
 // 2. String Concatenation
 //
 
-// console.log( 'hello ' + 'world' )
+/*console.log( 'hello ' + 'world' )
 
-// console.log( 'I have ' + 20 + ' dogs!' )
+console.log( 'I have ' + 20 + ' dogs!' )
 
-// console.log( 20 + '16' )
+console.log( 20 + '16' )*/
 
 //
 // 3. String Methods
@@ -47,4 +47,11 @@
 // declare two variables, both strings, one for your first name and one for your last name
 
 // 1. Concatenate your first and last name into a single string and console.log it
+var fName = "aj";
+var lName = "Love";
+var fullName = fName + ' ' + lName;
+console.log (fullName);
+
 // 2. Using `.charAt()` concatenate the 3rd, 5th and 1st letters of your full name together
+
+console.log (fullName.charAt(3) + fullName.charAt(4) + fullName.charAt(0));
