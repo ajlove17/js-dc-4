@@ -13,22 +13,23 @@
 //  1. Arithmetic Operators
 //
 
-// Addition:
+// // Addition:
 // console.log( 'Addition:' )
 // console.log( 1 + 1 ) // => 2
-//
+
+
 // // Subtraction:
 // console.log( 'Subtraction:' )
 // console.log( 2 - 5 ) // => -3
-//
+
 // // Division:
 // console.log( 'Division:' )
 // console.log( 5 / 1 ) // => 2.5
-//
+
 // // Multiplication:
 // console.log( 'Multiplication:' )
 // console.log( 6 * 2 ) // => 12
-//
+
 // // Modulo/Remainder:
 // console.log( 'Modulo:' )
 // console.log( 10 % 2 ) // => 0
