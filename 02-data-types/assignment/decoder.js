@@ -4,6 +4,7 @@
  */
 
  // Your code here
+ var code =[];
 
  /**
   * Question 2
@@ -14,6 +15,9 @@
   */
 
 // Your code here
+ var code = ['x', 'u', 's', 'a', 'e', 'l', 'p', 'e', 'e', 'n', 'i', 't', 'l', 'a', 'v', 'o', 'x', 'e', 'r', 'o', 'm', 'c'];
+result = code.join();
+ console.log("Answer 2 = " + result);
 
 /**
  * Question 3
@@ -22,6 +26,15 @@
  */
 
 // Your code here
+/*remove 1st*/
+result= code.shift();
+result = code.join();
+// console.log(result);
+
+//remove last
+result= code.pop();
+result = code.join();
+console.log("Answer 3 = " + result);
 
 /**
  * Question 4
@@ -29,6 +42,9 @@
  */
 
 // Your code here
+result= code.reverse();
+result = code.join();
+console.log("Answer 4 = " + result);
 
 /**
  * Question 5
@@ -37,6 +53,9 @@
  */
 
 // Your code here
+result= code.push("e");
+result = code.join();
+console.log("Answer 5 = " + result);
 
 /**
  * Question 6
@@ -45,7 +64,10 @@
  */
 
 // Your code here
-
+result= code.splice(4, 1, " ");
+result= code.splice(13, 1, " ");
+result = code.join();
+console.log("Answer 6 = " + result);
 /**
  * Question 7
  * Join the array with an empty String in between each character and log the
@@ -53,3 +75,7 @@
  */
 
  // Your code here
+ for(c=0; c < code.length; c++) {
+   result = result.replace(",", "");
+};
+console.log("Answer 7 Decoded = " + result);
