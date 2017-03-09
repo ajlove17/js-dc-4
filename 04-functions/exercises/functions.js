@@ -20,7 +20,7 @@
 
 */
 
-// Function declaration
+// // Function declaration
 // function myFirstFunction() {
 //   console.log( 'this is my first function' )
 // }
@@ -42,11 +42,14 @@
   2. Using Parameters and Arguments
 
 */
-
+// function sayThanks( name ){
+//   console.log("Thanks " + name );
+// };
+// sayThanks("Obama");
 
 // // ----------
 // var number = 0
-// function addOneToNumber() {
+// function addOneToNumber( number) {
 //   number += 1
 // }
 //
@@ -70,12 +73,12 @@
 */
 
 // function addOne( numOne, numTwo ) {
-//   return numOne + numTwo
+//   return numOne + numTwo;
 // }
 //
-// var myNum = addOne( 5, 10 )
-// console.log( myNum )
-
+// var myNum = addOne( 5, 10 );
+// console.log( myNum );
+// console.log( addOne( 7, 2 )  );
 
 
 // // Side effect
@@ -104,32 +107,34 @@
 
 */
 
-// Scope Example 1:
+// // Scope Example 1:
 // var a = 1
 //
 // function addThree( ) {
 //   console.log( a + 3 )
 // }
+//
+// addThree ();
 
 
-
-
-// Scope Example 2:
+// // Scope Example 2:
+// var a = "phedon"
+//
 // function myFunction() {
 //   var a = 1
 // }
-//
+// myFunction()
 // console.log( a )
 
-
-// Scope Example 3:
+//
+// // Scope Example 3:
 // var a = 1
 //
 // function myFunction() {
 //   console.log( a )
 // }
 
-// Scope Example 4:
+// // Scope Example 4:
 // var a = 1
 // function firstFunction() {
 //   // do we expect this to work?
@@ -146,17 +151,18 @@
 //     console.log( b )
 //     console.log( c )
 //   }
-//
+// internalFunction()
 //   // do we expect this to work?
 //   console.log( a )
 //   console.log( b )
-//   console.log( c )
+// //  console.log( c ) //undefined
 // }
 // // do we expect this to work?
 // console.log( a )
-// console.log( b )
-// console.log( c )
-
+// //console.log( b ) //undefined
+// //console.log( c ) //undefined
+//
+// firstFunction()
 
 /*
 
@@ -165,12 +171,12 @@
 */
 
 
-// Functions as variables
-var myFunction = function () {
-  console.log( 'myFunction variable' )
-}
-
-myFunction()
+// // Functions as variables
+// var myFunction = function () {
+//   console.log( 'myFunction variable' )
+// }
+//
+// myFunction()
 
 
 /*
@@ -181,9 +187,11 @@ myFunction()
 
 
 // Pure functions
-function isCurrentYearLeapYear() {
+// 1. always return the same output for the same set of inputs 2. don't have any side effects (invoking our function wont have any affect on the state of our program elsewhere)
+   const currentYear = new Date().getFullYear()
 
-   const year = new Date().getFullYear()
+function isCurrentYearLeapYear( year) {
+
 
    if(year % 4 !== 0) {
      return false
