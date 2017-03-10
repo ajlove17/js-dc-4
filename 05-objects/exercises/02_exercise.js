@@ -16,6 +16,18 @@ variable and that it meets the conditions above of having at least 4
 properties, one of which is a method
 
 */
+var car = {
+  carMake: "Toyota",
+  carModel: "Carolla",
+  carYear: "1983",
+  carColor: "tan",
+  carGears: {
+    p: "park",
+    d: "drive",
+    r: "reverse"
+  }
+  //letsMove: function gears
+};
 
 
 
@@ -24,6 +36,7 @@ properties, one of which is a method
 Get one of the properties from your object using dot notation
 
 */
+console.log(car.carMake);
 
 
 
@@ -32,7 +45,7 @@ Get one of the properties from your object using dot notation
 Get one of the properties from your object using bracket notation
 
 */
-
+console.log(car['carModel']);
 
 /*
 
@@ -40,10 +53,10 @@ Set one of the values of one of your properties using either dot notation or
 bracket notation
 
 */
-
-
+car.carYear = 1980;
 /*
 
 Call your car's method
 
 */
+console.log(car);

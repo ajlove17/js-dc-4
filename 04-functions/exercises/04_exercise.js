@@ -79,7 +79,9 @@ function dealHand (numOfCards ){
   var myHand = [];
   var myCard
 
-  if ( (numOfCards === undefined) || (numOfCards === 0) ) {
+
+
+  if ( (numOfCards === undefined) || (numOfCards === 0) ) { /// or you can do ... numOfCards = numOfCards || 1;
     var numOfCards = 1;
   } else if (numOfCards > (ranks.length * suits.length) ) {
     var numOfCards = (ranks.length * suits.length) ;
@@ -94,7 +96,7 @@ function dealHand (numOfCards ){
               myCard = "No More Cards";
           };
         };
-        myHand[c] = myCard;
+        myHand[c] = myCard; // myHand.push
     };
   } else {
     myHand = getRandomCard();
@@ -114,11 +116,9 @@ initialize them as empty arrays.
 Deal both playerOneCards and playerTwoCards 7 cards each.
 
 */
-var playerOneCards = [];
-var playerTwoCards = [];
+var playerOneCards = dealHand(7);
+var playerTwoCards = dealHand(7);
 
-playerOneCards = dealHand(7);
-playerTwoCards = dealHand(7);
 
 // console.log(playerOneCards);
 // console.log(playerTwoCards);
@@ -131,7 +131,7 @@ array and prints each card.
 */
 
 function showHand( aHand) {
-  console.log("\n *** Show Hand ***");
+  console.log("\n *** Show Hand ***"); // aHand.join('\n - ');
   for (a=0; a< aHand.length; a++){
     console.log(aHand[a]);
   };

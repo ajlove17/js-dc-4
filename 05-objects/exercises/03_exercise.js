@@ -20,3 +20,21 @@ Apple, Red, 0.78
 Nuts, Brown, 2.23
 
 */
+
+
+//var myJSON = require('../exercises/data.json');
+var myJSON = require('./data.json');
+
+console.log(myJSON["Store Name"], "'s Current Stock");
+
+//orig.... console.log("Item, Color, Price");
+var foodsKeys = Object.keys( myJSON.Foods[0]);
+console.log( foodsKeys.join(", ")  );
+
+ for (f=0; f< myJSON.Foods.length; f++){
+  //  var foodItem = myJSON.Foods[f];
+  //  console.log(foodItem.name  + ", " + foodItem.color + ", " + foodItem.price);
+
+ console.log(myJSON.Foods[f].name  + ", " + myJSON.Foods[f].color + ", $" + myJSON.Foods[f].price);
+}
+/*https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys*/
