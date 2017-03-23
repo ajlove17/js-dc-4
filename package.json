@@ -1,0 +1,23 @@
+{
+  "name": "js-dc-4",
+  "version": "1.0.0",
+  "description": "Class will meet Tuesday and Thursday on the 8th floor in classroom 5 from 6:30 - 9:30pm - https://goo.gl/maps/PwyY2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajlove17/js-dc-4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajlove17/js-dc-4/issues"
+  },
+  "homepage": "https://github.com/ajlove17/js-dc-4#readme",
+  "keywords": [],
+  "dependencies": {
+    "swap-case": "^1.1.2"
+  }
+}

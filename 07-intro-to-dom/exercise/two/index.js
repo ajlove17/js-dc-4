@@ -14,6 +14,8 @@ Before you get started, you should familiarize yourself with the HTML document t
 Get the DOM nodes for the table of contents and the article body and save them both as variables
 
 */
+var contents = document.getElementById('table-of-contents');
+var body = document.getElementById('article-body');
 
 
 
@@ -22,9 +24,34 @@ Get the DOM nodes for the table of contents and the article body and save them b
 get an array of every heading in the document and store them in a variable called documentHeadings
 
 */
+var documentHeadings = [];
+var aHeader = '';
+
+var nodelist = (document.getElementsByTagName("h1").length) +
+(document.getElementsByTagName("h2").length) + (document.getElementsByTagName("h3").length) + (document.getElementsByTagName("h4").length) +
+(document.getElementsByTagName("h5").length) +
+(document.getElementsByTagName("h6").length);
+console.log(nodelist);
 
 
+// aHeader = document.querySelector("h1").innerText;
+// console.log(aHeader);
 
+for(h=1; h <= nodelist; h++){
+  if (h === 1 ){
+     aHeader = document.querySelector("h1").innerText;
+  } else {
+    var aHeader = document.querySelector(aHeader).nextElementSibling//.innerText;
+  }
+documentHeadings.push(aHeader);
+  console.log(documentHeadings);
+}
+
+// for (h1=1, h1<= document.getElementsByTagName("h1").length, h1++){
+//   var aH1 = document.getElementsByTagName("h1");
+//   documentHeadings.push( aH1);
+//    if ()
+// }
 /*
 
 To generate our table of contents we need to do a couple of things:
