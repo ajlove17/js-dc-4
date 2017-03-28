@@ -96,3 +96,8 @@ var firstP = document.getElementById('first-paragraph').appendChild( link )
 // Removing
 // link.remove() // removes the element
 // para.removeChild(link) // removes a child element
+
+/*
+https://www.w3schools.com/jsref/dom_obj_all.asp
+
+*/
