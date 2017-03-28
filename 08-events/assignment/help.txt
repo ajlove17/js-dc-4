@@ -1,0 +1,3 @@
+state of page change target
+
+there is inherance. so you just add it to the parent
