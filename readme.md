@@ -179,7 +179,7 @@ Today's class goes in depth on event driven development, responding to browser/u
 - [Slides](https://ga-students.github.io/js-dc-4/08-events)
 - [Assignment](08-events/assignment/)
 - [Lesson Notes](08-events/lesson_plan.md)
-
+- [Lesson](https://www.youtube.com/watch?v=R0_9uYY6qDA)
 
 ### Class 09: Templating
 
@@ -191,7 +191,7 @@ Today's class goes in depth on event driven development, responding to browser/u
 - [Slides](https://ga-students.github.io/js-dc-4/09-templating/)
 - [Assignment](09-templating/assignment.md)
 - [Lesson Notes](09-templating/lesson_plan.md)
-
+- [Lesson](https://www.youtube.com/watch?v=SScBAes8kss)
 
 ### Class 10: Express
 
@@ -294,3 +294,6 @@ Today's class goes in depth on event driven development, responding to browser/u
 
 ### Class 19: Presentations
 Students will have 10 minutes to present their final projects. See the [presentation requirements here](20-presentations/requirements.md)
+
+### Class 19+: Profit
+Students will $$$
