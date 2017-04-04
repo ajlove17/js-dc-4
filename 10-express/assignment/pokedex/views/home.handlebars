@@ -1,0 +1,9 @@
+<h1>Pokemon: {{title}}</h1>
+
+{{#if pokemon}}
+<ul>
+  {{#each pokemon}}
+  <li><a href="/{{this.id}}"> {{ this.name }}</a></li>
+  {{/each}}
+</ul>
+{{/if }}
