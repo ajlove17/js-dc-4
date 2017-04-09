@@ -1,0 +1,23 @@
+﻿2} = {{ how to output an variable}}
+3} = {{{ outputting a template}}}
+
+
+install handlebars package that works wiht express
+write code:
+npm install --save express-handlebars
+
+make views folder
+wite code: 
+mkdir views
+
+go to views folder
+[cd views]
+
+make hadnelbars files
+[touch {home,project,projects}.handlebars]
+
+make layout folder inside views
+[mkdir layouts]
+
+make layout file inside of the layout folder
+[touch layouts/main.handelbars]

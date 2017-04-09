@@ -1,0 +1,5 @@
+/* make pokedex  with external API, locall databse, & handelbars
+
+had form build pokemon group from pokedex
+them your applcation will submit 
+ask for that information from the APIadd those deatial to your databse, then display*/

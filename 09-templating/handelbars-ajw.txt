@@ -1,0 +1,8 @@
+﻿http://tryhandlebarsjs.com/
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+<div class="profile">  <img src="{{ person.profPic }}" >  <h1> {{ person.name.first }} {{ person.name.last }} </h1>  {{#if person.todos}}  <h2> Todos: </h2>  <ul>    {{#each person.todos}}      <li> {{ this }} </li>    {{/each }}  </ul>  {{ else }}  <h2> Done for the day! </h2>  {{/if}} </div>
+
+
+{  person: {    profPic: "http://0.gravatar.com/avatar/f190542c0ce80b9bc399f5039f6a8b86",    name: {      first: "Zakk",      last: "Fleischmann"    },    todos: [      'learn Javascript', 'learn HTML', 'learn CSS'    ]  } }

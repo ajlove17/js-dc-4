@@ -18,6 +18,10 @@
   "homepage": "https://github.com/ajlove17/js-dc-4#readme",
   "keywords": [],
   "dependencies": {
+    "express-handlebars": "^3.0.0",
     "swap-case": "^1.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }

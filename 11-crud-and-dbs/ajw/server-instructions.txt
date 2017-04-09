@@ -1,0 +1,32 @@
+﻿make a server  folder [first_express]
+
+Open git Bash/CMD
+navigate to new folder [cd "G-A\js-dc-4\10-express\exercise\first_espress"]
+
+write code:
+npm init -y
+
+write code:
+npm install -- save express
+(npm install -- save express  express-handlebars // to install bth)
+
+
+make a index.js file and write code for your server
+
+run the file in gitbash 
+write code:
+node index.js
+
+go to http://localhost:3000 in browser to see page
+
+(ctrl+c will shut down the server. once it is stopped you can update re-run it and see your updates)
+
+to have the server repload on refresh write code:
+npm install --save-dev nodemon
+
+(if there is an error try installing nondemon globally... write code:
+npm install -g nodemon )
+
+write code:
+nodemon index.js
+ 

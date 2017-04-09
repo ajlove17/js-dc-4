@@ -18,7 +18,7 @@
         <script id="to-do-template" type="text/x-handlebars-template">
             <ul id="todo-list">
                 {{#each todos}}
-                  <li class="todo-list-item">{{this}}</li>
+                  <li class="todo-list-item">{{this}} <!--  &nbsp; &nbsp; <a href="{{done}}">Complete</a> | <a href="{{del}}">Delete</a>--></li>
                 {{/each}}
             </ul>
         </script>

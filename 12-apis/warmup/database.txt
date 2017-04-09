@@ -1,0 +1,39 @@
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/
+
+Get MongoDB Community Edition
+in CMD find wich version of windows you have
+code:
+wmic os get caption
+
+https://www.mongodb.com/download-center
+
+open and run 
+mongodb-win32-x86_64-2008plus-ssl-3.4.3-signed.msi
+
+Run MongoDB Community Edition
+Warning: Do not make mongod.exe visible on public networks without running in “Secure Mode” with the auth setting. MongoDB is designed to be run in trusted environments, and the database does not enable “Secure Mode” by default.
+
+
+open CMD 
+on your c drive make 
+md \data\db
+
+
+cd "\Program Files\MongoDB\Server\3.4\bin"
+
+./mongod
+
+cd "\Program Files\MongoDB\Server\3.4\bin"
+to test run
+./mongo
+
+do not close window unless you want stop it
+default db port: mongodb://localhost:27017
+
+
+
+
+go to project 
+npm init -y 
+
+npm install mongoose
